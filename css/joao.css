@@ -1,0 +1,22 @@
+body {
+    background-color: dimgray;
+}
+
+h1 {
+   background-color: darkcyan; 
+   text-align: center;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 10em;
+}
+
+p {
+    font-size: 3em;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+label {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
