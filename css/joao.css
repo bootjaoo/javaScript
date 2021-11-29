@@ -18,6 +18,13 @@ p {
 main {
     margin: 0;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
    /*inputs */
     input,
     textarea{
@@ -30,7 +37,10 @@ main {
     }
 
     input:focus,
-    textarea:focus{}
+    textarea:focus{
+      outline: none;
+    }
+
   /* Banner */
  
   #banner {
@@ -59,9 +69,9 @@ main {
 
   #searchbox {
     position: fixed;
-    right: 0;
+    right: 100px;
     top: 24px;
-    width: 500px;
+    width: 300px;
     pointer-events: none;
     z-index: 50;
     transition: 0.4s;
@@ -72,4 +82,65 @@ main {
     width: 100%;
 
   }
+
+  /* Navegação (Enquanto rolo a  página) */
+
+  nav{
+    height: 72px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding:0 16px 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+  }
+
+  nav a {
+    padding: 0 32px;
+    color: #eee;
+    transition: 0.4s;
+  }
+/* Cor quando passar o mouse por cima */ 
+  nav a:hover{
+    text-decoration: none; /*para sumir a decoração do texto */
+    color: red;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none; /* para tirar bullet(bolinhas ) de uma lista */
+    justify-content: space-around;
+    height: 100%;
+    margin: 20;
+  }
+
+  .active {
+    color: rgb(13, 90, 126);
+  }
+
+  #logo-img{
+    display: flex;
+    height: 100%;
+    padding:0 32px ;
+    align-items: center;
+    color: white;
+    transition: 0.4s;
+  }
+
+  #logo-img img {
+    height: 65px;
+    align-items: center;
+    margin-top: 12%;
+  }
+
+  #logo-img:hover {
+    background: rgba(5, 49, 54, 0.4);
+    border-radius: 100px;
+  }
+
 
