@@ -142,5 +142,39 @@ a:hover {
     background: rgba(5, 49, 54, 0.4);
     border-radius: 100px;
   }
+  
+#menu-icon {
+  height: 100%;
+  font-size: 28px;
+  padding:0 4px;
+  color: #eee;
+  display: none;
+  align-items: center;
+}
 
+/* Search Icon  */
 
+#search-icon {
+  color: white;
+  padding:0 32px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#search-icon:hover {
+  color: red;
+}
+
+/* slide out menu */
+
+#slideout-menu { 
+  display: none;
+}
+
+/* Sections */
+
+  section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
